@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+    padding: 18px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-right: 41px;
+}
+
+.header-account-link {
+    margin: 0 33px;
+}
+
+.promo {
+    background-color: #F1E4E6;; 
+}
+
+.promo-wrap {
+    height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../photo/promo.png);
+    background-repeat: no-repeat;
+    background-position: -224px bottom;
+}
+
+.promo-title {
+    font-family: 'Lato';
+    margin: 0;
+    width: 50%;
+    margin-left: 64px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-top: -50px;
+    font-size: 48px;
+    color: #222222;
+}
+
+.brand {
+    font-weight: 900;
+}
+
+.of-luxerious {
+    font-size: 30px;
+}
+
+.fashion {
+    color: #F16D7F;
+    font-size: 30px;
+}
+
+.center {
+    padding: 0 calc(50% - 1140px / 2);
+    font-family: 'Lato';
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.category-item {
+    width: 360px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.category-item-4 {
+    width: 100%;
+}
+
+.category_text {
+    position: absolute;
+    top: 105px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.category_text_women {
+    left: 120px;
+}
+
+.category_text_men {
+    left: 144px;
+}
+
+.category_text_kids {
+    left: 132px;
+}
+.category_red {
+    color: #F16D7F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.category_text_accesories {
+    top: 71px;
+    left: 495px;
+}
+
+.fetured {
+    font-family: 'Lato';
+}
+
+
+.fetured_heading {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 96px;
+}
+
+.featured_text {
+    text-align: center;
+    color: #9F9F9F;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 6px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.product {
+    width: 360px;
+    background: #F8F8F8;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.all_product_description {
+    padding: 25px 28px 18px 16px;
+}
+
+.product_name {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-bottom: 12px;
+}
+
+.product_description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5D5D5D;
+    padding-bottom: 18px;
+}
+
+.product_price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button_all_products {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-align: center;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 49px;
+    margin-bottom: 95px;
+}
+
+.advantages {
+    background-color: #222224;
+}
+
+.advantages-wrap {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.delivery {
+    font-family: Lato;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    padding: 103px 0;
+}
+
+.delivery_heading {
+    padding: 28px 0 16px;
+    font-size: 19.96px;
+    line-height: 24px;
+}
+
+.delivery_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+}
+
+.sales {
+    font-family: Lato;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    padding: 103px 0;
+}
+
+.sales_heading {
+    font-size: 19.96px;
+    line-height: 24px;
+    padding: 28px 0 16px;
+}
+
+.sales_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+}
+
+.assurance {
+    font-family: Lato;
+    color: #FBFBFB;
+    text-align: center;
+    text-decoration: none;
+    padding: 103px 0;
+}
+
+.assurance_heading {
+    font-size: 19.96px;
+    line-height: 24px;
+    padding: 28px 0 16px;
+}
+
+.assurance_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+}
+
+.footer {
+    background-color: #222224;
+    padding: 15px 38px;
+    margin-top: auto;
+}
+
+
+
