@@ -25,6 +25,8 @@ body {
     opacity: 0;/*это все чтобы категории были видны в структуре и находились по поиску*/
 }
 
+/*шапка*/
+
 .header {
     background-color: #222222;
     padding: 18px 0;
@@ -61,6 +63,8 @@ body {
     text-decoration: none;
     color: transparent;
 }
+
+/*promo на главной*/
 
 .promo {
     background-color: #F1E4E6;
@@ -99,6 +103,8 @@ body {
     color: #F16D7F;
     font-size: 30px;
 }
+
+/*категории на главной*/
 
 .categories {
     margin-top: 65px;
@@ -156,6 +162,80 @@ body {
     left: 495px;
 }
 
+/*page-title в каталоге*/
+
+.page-title {
+    background-color: #F8F3F4;
+}
+
+.page-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.new {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumb-item {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb-item-active {
+    color: #F16D7F;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.filter-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 51px;    
+    padding-bottom: 27px;
+}
+
+.left-filter {
+    width: 392px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    font-weight: 600;
+    padding-right: 11px;
+}
+
+.middle-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 297px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+
+.size {
+    padding-left: 13px;
+}
+
+.price {
+    padding-left: 13px;
+}
+
+/*популярные товары на главной*/
+
 .fetured_heading {
     text-align: center;
     font-size: 30px;
@@ -207,6 +287,40 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+}
+
+/*pagination в каталоге*/
+
+
+.pagitation {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 109px;
+}
+
+.pagination-list .page-item{
+    float: left;
+    display: block;
+    width: 34px;
+    height: 50px;
+}
+
+.pagination-list .page-item .page-link {
+    display: block;
+    border-color: black;
+}
+
+.page-item {
+    list-style-type: none;
+}
+
+.page-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5D5D;
 }
 
 .button {
@@ -332,8 +446,7 @@ body {
 }
 
 .subscribe {
-    width: 500px;
-    padding-right: 97px;
+    padding-right: 104px;
 }
 
 .subscribe-text {
@@ -347,29 +460,40 @@ body {
 
 .subscribe-heading-mini {
     font-size: 18px;
+    font-weight: 400;
 }
 
 .subscribe-form {
     display: flex;
-    justify-content: center;
 }
 
 .subscribe-email {
-    background: #E1E1E1;
+    background-color: #E1E1E1;
     font-size: 14px;
     line-height: 17px;
     height: 49px;
-    width: 256px;
+    width: 250px;
     color: #222224;
     padding-left: 22px;
+    padding-right: 64px;
     border: none;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
+.subscribe-email::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.67;
+    color: #222224;
+}
+
+.subscribe-email:hover {
+    background-color: #c7c5c5;
+}
 
 .subscribe-submit {
-    background: #F16D7F;
+    background-color: #F16D7F;
     height: 49px;
     width: 100px;
     color: #FFFFFF;
@@ -377,6 +501,10 @@ body {
     border: none;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.subscribe-submit:hover {
+    background-color: #c35766;
 }
 
 .footer {
@@ -398,6 +526,7 @@ body {
     line-height: 19px;
 }
 
+
 .instagram {
     padding: 0 7px ;
 }
@@ -406,5 +535,9 @@ body {
     padding-right: 7px;
 }
 
+.footer-link {
+    color: transparent;
+    text-decoration: none;
+}
 
 
