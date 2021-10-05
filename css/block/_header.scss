@@ -1,0 +1,36 @@
+.header {
+    background-color: $main-color;
+    padding: 18px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left, .header-right{
+    display: flex;
+    align-items: center; 
+}
+
+.header-logo-link {
+    margin-right: 41px;
+    text-decoration: none;
+    color: transparent;
+}
+
+.button-search, .button-burger {
+    background-color: transparent; /*чтобы картинка svg была видна*/
+    border: none;
+} 
+
+.account-link {
+    margin: 0 33px;
+    text-decoration: none;
+    color: transparent;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: transparent;
+}

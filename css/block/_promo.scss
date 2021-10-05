@@ -1,0 +1,37 @@
+.promo {
+    background-color: #F1E4E6;
+}
+
+.promo-wrap {
+    height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../photo/promo.png);
+    background-repeat: no-repeat;
+    background-position-x: -224px;
+    background-position-y: bottom;
+}
+
+.promo-title {
+    font-size: 48px;
+    color: $main-color;
+    line-height: 40px;
+    margin-right: 90px;
+    border-left: 12px solid $second-color;
+    padding-left: 16px;
+}
+
+.brand {
+    font-weight: 900;
+}
+
+.of-luxerious {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fashion {
+    color: $second-color;
+    font-size: 30px;
+}
