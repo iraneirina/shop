@@ -36,6 +36,7 @@ body {
 }
 
 /*шапка*/
+
 .header {
   background-color: #222222;
   padding: 18px 0;
@@ -83,6 +84,7 @@ body {
 }
 
 /*promo на главной*/
+
 .promo {
   background-color: #F1E4E6;
 }
@@ -128,6 +130,7 @@ body {
 }
 
 /*категории на главной*/
+
 .categories {
   margin-top: 65px;
 }
@@ -394,6 +397,7 @@ body {
   padding-right: 22px;
 }
 
+
 /*популярные товары product*/
 .product-fetured {
   padding-top: 75px;
@@ -401,6 +405,7 @@ body {
 }
 
 /*популярные товары на главной*/
+
 .fetured_heading {
   text-align: center;
   font-size: 30px;
@@ -460,6 +465,7 @@ body {
 }
 
 /*pagination в каталоге*/
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,6 +475,7 @@ body {
           justify-content: center;
   padding-top: 48px;
   padding-bottom: 96px;
+
 }
 
 .pagination-nav {
@@ -639,6 +646,7 @@ body {
 
 .subscribe {
   padding-right: 104px;
+
 }
 
 .subscribe-text {
@@ -723,6 +731,7 @@ body {
 }
 
 /*подвал*/
+
 .footer {
   background-color: #222222;
   padding: 30px 0;
@@ -748,6 +757,7 @@ body {
   line-height: 19px;
 }
 
+
 .instagram {
   padding: 0 7px;
 }
@@ -761,3 +771,4 @@ body {
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
+
