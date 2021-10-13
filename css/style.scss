@@ -80,9 +80,37 @@ body {
 }
 
 .left-filter {
-    width: 392px;
     display: flex;
     justify-content: flex-start;
+}
+
+/*скрываем стрелку*/
+summary { display: block;}
+::-webkit-details-marker {display: none;}
+
+/*закрытый фильтр*/
+
+
+.filter-open {
+    margin-right: 31px;
+    width: 360px;
+    position: relative;
+}
+
+/*открытый фильтр*/
+.filter-open[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter-open[open] .filter-text {
+    color:$second-color;
+}
+
+/*выпадающая часть*/
+.filter-content {
+    position: absolute;
+    width: 360px;
+    background-color: #FFFFFF;
 }
 
 .filter-text {
@@ -90,8 +118,9 @@ body {
     line-height: 17px;
     color: $main-color;
     font-weight: 600;
-    padding-right: 11px;
 }
+
+
 
 .middle-filter {
     display: flex;
@@ -282,8 +311,8 @@ body {
 }
 
 .pagination-nav {
-    display: inline-block;
-    padding: 15px 16px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 1px 12px 16px;
 }
 
 .pagination-list .page-item{
@@ -298,6 +327,9 @@ body {
 
 .page-item {
     list-style-type: none;
+    border-style: none;
+    background:#FFFFFF;
+    padding-right: 17px;
 }
 
 .page-link {
@@ -305,9 +337,16 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #5D5D5D;
+    color: #EBEBEB;
 }
 
+.page-item-before {
+    padding-right: 1px;
+}
+
+.page-item-after {
+    padding-right: 1px;
+}
 
 /*кнопка посередине на главной*/
 
