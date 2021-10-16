@@ -36,7 +36,6 @@ body {
 }
 
 /*шапка*/
-
 .header {
   background-color: #222222;
   padding: 18px 0;
@@ -84,7 +83,6 @@ body {
 }
 
 /*promo на главной*/
-
 .promo {
   background-color: #F1E4E6;
 }
@@ -130,7 +128,6 @@ body {
 }
 
 /*категории на главной*/
-
 .categories {
   margin-top: 65px;
 }
@@ -271,9 +268,13 @@ summary {
 
 /*закрытый фильтр*/
 .filter-open {
-  margin-right: 31px;
   width: 360px;
   position: relative;
+}
+
+.filter-text {
+  padding-top: 16px;
+  padding-left: 16px;
 }
 
 /*открытый фильтр*/
@@ -286,11 +287,17 @@ summary {
   color: #F16D7F;
 }
 
+.filter-open[open] .filter-text .filter-svg {
+  color: #F16D7F;
+}
+
 /*выпадающая часть*/
 .filter-content {
   position: absolute;
   width: 360px;
   background-color: #FFFFFF;
+  padding: 24px 15px 16px 17px;
+  color: #6F6E6E;
 }
 
 .filter-text {
@@ -298,6 +305,43 @@ summary {
   line-height: 17px;
   color: #222222;
   font-weight: 600;
+}
+
+.filter-element {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 11px;
+  margin-bottom: 18px;
+}
+
+.filter-content-list {
+  padding: 13px 17px;
+}
+
+.filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-bottom: 11px;
+  text-decoration: none;
+  color: #6F6E6E;
+}
+
+/*открытый подпункт фильтра*/
+.filter-content-menu[open] .filter-element {
+  color: #F16D7F;
+}
+
+.middle-filter {
+  margin-left: 30px;
+  padding-top: 16px;
 }
 
 .middle-filter {
@@ -308,6 +352,8 @@ summary {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 297px;
+  margin-left: 30px;
+  padding-top: 16px;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
@@ -315,6 +361,11 @@ summary {
 
 .size {
   padding-left: 13px;
+}
+
+.filter-checkbox-label {
+  display: block;
+  margin-bottom: 6px;
 }
 
 .price {
@@ -428,7 +479,6 @@ summary {
   padding-right: 22px;
 }
 
-
 /*популярные товары product*/
 .product-fetured {
   padding-top: 75px;
@@ -436,7 +486,6 @@ summary {
 }
 
 /*популярные товары на главной*/
-
 .fetured_heading {
   text-align: center;
   font-size: 30px;
@@ -496,7 +545,6 @@ summary {
 }
 
 /*pagination в каталоге*/
-
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +554,6 @@ summary {
           justify-content: center;
   padding-top: 48px;
   padding-bottom: 96px;
-
 }
 
 .pagination-nav {
@@ -688,7 +735,6 @@ summary {
 
 .subscribe {
   padding-right: 104px;
-
 }
 
 .subscribe-text {
@@ -773,7 +819,6 @@ summary {
 }
 
 /*подвал*/
-
 .footer {
   background-color: #222222;
   padding: 30px 0;
@@ -799,7 +844,6 @@ summary {
   line-height: 19px;
 }
 
-
 .instagram {
   padding: 0 7px;
 }
@@ -813,4 +857,3 @@ summary {
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
-

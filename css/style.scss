@@ -90,11 +90,14 @@ summary { display: block;}
 
 /*закрытый фильтр*/
 
-
 .filter-open {
-    margin-right: 31px;
     width: 360px;
     position: relative;
+}
+
+.filter-text {
+    padding-top: 16px;
+    padding-left: 16px;
 }
 
 /*открытый фильтр*/
@@ -106,11 +109,18 @@ summary { display: block;}
     color:$second-color;
 }
 
+.filter-open[open] .filter-svg {
+    color: $second-color;
+}
+
 /*выпадающая часть*/
+
 .filter-content {
     position: absolute;
     width: 360px;
     background-color: #FFFFFF;
+    padding: 24px 15px 16px 17px;
+    color:#6F6E6E;
 }
 
 .filter-text {
@@ -121,17 +131,57 @@ summary { display: block;}
 }
 
 
+.filter-element {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    border-left: 5px solid $second-color;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+    margin-bottom: 18px;
+
+}
+
+.filter-content-list {
+    padding: 13px 17px;
+}
+
+.filter-item {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 11px;
+    text-decoration: none;
+    color:#6F6E6E;
+}
+
+/*открытый подпункт фильтра*/
+.filter-content-menu[open] .filter-element{
+    color: $second-color;
+}
+
+
+.middle-filter {
+    margin-left: 30px;
+    padding-top: 16px;
+}
 
 .middle-filter {
     display: flex;
     justify-content: space-between;
     width: 297px;
+    margin-left: 30px;
+    padding-top: 16px;
     @include text-contacts()
 }
 
 
 .size {
     padding-left: 13px;
+}
+
+.filter-checkbox-label {
+    display: block;
+    margin-bottom: 6px;
 }
 
 .price {
