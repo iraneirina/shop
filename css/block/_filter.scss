@@ -11,6 +11,7 @@
 .left-filter {
     display: flex;
     justify-content: flex-start;
+    
 }
 
 /*скрываем стрелку*/
@@ -57,6 +58,7 @@ summary { display: block;}
     line-height: 17px;
     color: $main-color;
     font-weight: 600;
+    
 }
 
 .filter-element {

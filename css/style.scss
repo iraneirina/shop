@@ -39,7 +39,6 @@ body {
 /*категории на главной*/
 @import "block/categories";
 
-
 /*page-title в каталоге*/
 
 .page-title {
@@ -73,138 +72,9 @@ body {
 }
 
 /*фильтр в каталоге*/
-
-.filter-wrap {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 51px;    
-    padding-bottom: 27px;
-}
-
-.left-filter {
-    display: flex;
-    justify-content: flex-start;
-    
-}
-
-/*скрываем стрелку*/
-summary { display: block;}
-::-webkit-details-marker {display: none;}
-
-/*закрытый фильтр*/
-
-.filter-open {
-    width: 360px;
-    position: relative;
-}
-
-.filter-text {
-    padding-top: 16px;
-    padding-left: 16px;
-}
-
-/*открытый фильтр*/
-.filter-open[open] {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-.filter-open[open] .filter-text {
-    color:$second-color;
-}
-
-.filter-open[open] .filter-svg {
-    color: $second-color;
-}
-
-/*выпадающая часть*/
-
-.filter-content {
-    position: absolute;
-    width: 360px;
-    background-color: #FFFFFF;
-    padding: 24px 15px 16px 17px;
-    color:#6F6E6E;
-}
-
-.filter-text {
-    font-size: 14px;
-    line-height: 17px;
-    color: $main-color;
-    font-weight: 600;
-}
-
-.filter-element {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 400;
-    border-left: 5px solid $second-color;
-    border-bottom: 1px solid #EBEBEB;
-    padding: 11px;
-    margin-bottom: 18px;
-}
-
-.filter-content-list {
-    padding: 13px 17px;
-}
-
-.filter-item {
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 11px;
-    text-decoration: none;
-    color:#6F6E6E;
-}
-
-/*открытый подпункт фильтра*/
-.filter-content-menu[open] .filter-element{
-    color: $second-color;
-}
-
-/*фильтр посередине*/
-
-.middle-filter {
-    margin-left: 20px;
-    padding-top: 16px;
-    display: flex;
-    justify-content: space-between;
-    width: 297px;
-    margin-left: 32px;
-    padding-top: 16px;
-    @include text-contacts()
-}
-
-.filter-checkbox-label {
-    display: block;
-    margin-bottom: 6px;
-}
-
-/*закрытый фильтр*/
-
-.middle-filter-open {
-    position: relative;
-}
-
-/*открытый фильтр*/
-.middle-filter-open[open] .middle-filter-checkbox {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-/*выпадающая часть*/
-.middle-filter-checkbox {
-    position: absolute;
-    width: 79px;
-    background-color: #FFFFFF;
-    padding: 9px 9px 0 9px;
-}
-
-.filter-checkbox-label {
-    display: block;
-    margin-bottom: 6px;
-}
+@import "block/filter";
 
 /*карточка товара в product*/
-
 
 .product-card {
     background-color: #F7F7F7;
@@ -231,7 +101,6 @@ summary { display: block;}
     width: 597px;
     height: 724px;
 }
-
 
 .product-card-info-wrap {
     text-align: center;
@@ -318,7 +187,6 @@ summary { display: block;}
     padding-bottom: 128px;
 }
 
-
 /*популярные товары на главной*/
 
 .fetured_heading {
@@ -351,15 +219,6 @@ summary { display: block;}
     position: relative;
 }
 
-/*product в каталоге*/
-.catalog-product {
-    width: 360px;
-    background: #F8F8F8;
-    text-decoration: none;
-    margin-top: 30px;
-}
-
-
 /*наложение черной прозрачной маски и кнопки на товар*/
 
 .product-overlay {
@@ -387,7 +246,6 @@ summary { display: block;}
     color: #FFFFFF;
     background-color: transparent;
     transition: 0.3s;
-
 }
 
 .cart-icon {
@@ -398,7 +256,6 @@ summary { display: block;}
     color: $second-color;
     background-color: #fff;
 }
-
 
 .all_product_description {
     padding: 25px 28px 18px 16px;
@@ -424,53 +281,16 @@ summary { display: block;}
     color: $second-color;
 }
 
+/*product в каталоге*/
+.catalog-product {
+    width: 360px;
+    background: #F8F8F8;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
 /*pagination в каталоге*/
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 96px;
-}
-
-.pagination-nav {
-    border: 1px solid #EBEBEB;
-    padding: 12px 1px 12px 16px;
-}
-
-.pagination-list .page-item{
-    float: left;
-    display: block;
-}
-
-.pagination-list .page-item .page-link {
-    display: block;
-    border-color: black;
-}
-
-.page-item {
-    list-style-type: none;
-    border-style: none;
-    background:#FFFFFF;
-    padding-right: 17px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #EBEBEB;
-    transition: 0.2s;
-}
-
-.page-item:hover {
-    color: $second-color;
-}
-
-.page-item-before {
-    padding-right: 1px;
-}
-
-.page-item-after {
-    padding-right: 1px;
-}
+@import "block/pagination";
 
 /*кнопка посередине на главной*/
 
@@ -502,469 +322,29 @@ summary { display: block;}
 
 
 /*блок формы в registration*/
-.registration-info {
-    background-color: #FFFFFF;;
-}
-
-.reg-block {
-    display: flex;
-    justify-content: center;
-}
-
-.reg-form {
-    width: 360px;
-    margin-top: 64px;
-}   
-
-.form-head {
-    font-size: 16px;
-    line-height: 19px;
-    color: $main-color;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.reg-field {
-    padding: 12px 17px;
-    width: 360px;
-    font-size: 13px;
-    line-height: 16px;
-    color: #B1B1B1;
-    border: 1px solid #A4A4A4;
-    margin-bottom: 20px;
-}
-
-.reg-field-last {
-    margin-bottom: 15px;
-}
-
-.requirement {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #B1B1B1;
-    margin-bottom: 39px;
-}
-
-.gender {
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #000000;
-    margin-top: 11px;
-    margin-bottom: 33px;
-}
-
-.gender-female {
-    margin-left: 20px;
-}
-
-.form-head {
-    margin-bottom: 20px;
-}
-
-.register-btn {
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    padding: 16px 29px;
-    background-color: $second-color; 
-    border: 1px solid $second-color;
-    margin-bottom: 96px;
-}
-
-.reg-pointer {
-    padding-left: 20px;
-}
-
-.privilege {
-    margin-left: 128px;
-    width: 652px;
-    margin-top: 64px;
-    font-weight: 300;
-    color: #000000;
-}
-
-.privilege-head {
-    font-size: 24px;
-    line-height: 29px;
-    font-weight: 300;
-    margin-bottom: 22px;
-}
-
-.privilege-text {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 21px;
-}
-
-.privilege-item {
-    list-style-type: none;
-    margin-bottom: 16px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
+@import "block/registration";
 
 /*центральная часть страницы корзины*/
-
-.cart {
-    background-color: #FFFFFF;
-}
-
-.cart-block {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 96px;
-
-}
-
-.cart-products {
-    width: 652px;    
-
-}
-
-.cart-product {
-    display: flex;
-    justify-content: start;
-    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-    margin-bottom: 40px;
-}
-
-.cart-prod-img {
-   width: 262px; 
-   height: 306px;
-}
-
-.cart-prod-text {
-    margin-left: 31px;
-    margin-top: 22px;
-}
-
-.cart-prod-head {
-    font-size: 24px;
-    line-height: 29px;
-    color: #222222;
-    font-weight: 400;
-    margin-bottom: 42px;
-}
-
-.cart-item {
-    list-style-type: none;
-    margin-bottom: 6px;
-    font-size: 22px;
-    line-height: 26px;
-    color: #575757;
-}
-
-.price-color {
-    color: $second-color;
-}
-
-.cart-buttons {
-    padding-top: 32px;
-}
-
-.cart-buttons-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 128px;
-}
-
-.shopping-btn {
-    padding: 17px 40px;
-    background-color: #FFFFFF;
-    border: 1px solid #A4A4A4;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-
-.cart-form-block {
-    width: 360px;
-}
-
-.cart-form-head {
-    font-size: 16px;
-    line-height: 19px;
-    color: #222222;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.cart-field {
-    padding: 12px 17px;
-    width: 360px;
-    font-size: 13px;
-    line-height: 16px;
-    color: #B1B1B1;
-    border: 1px solid #A4A4A4;
-    margin-bottom: 20px;
-    font-weight: 300; 
-}
-
-.quote-btn {
-    padding: 9px 15px;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
-    background-color: #FFFFFF;
-    border: 1px solid #A4A4A4;
-    margin-top: 3px;
-    margin-bottom: 57px;
-}
-
-.checkout {
-    background-color: #F5F3F3;
-    padding: 39px 34px;
-}
-
-.sub {
-    text-align: end;
-    font-size: 11px;
-    line-height: 13px;
-    color: #4A4A4A;
-    font-weight: 400;
-}
-
-.grand {
-    text-align: end;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #222222;
-    margin-top: 12px;
-    margin-bottom: 21px;
-}
-
-.sub-price {
-    margin-left: 30px;
-}
-
-.grand-price {
-    color: $second-color;
-    font-weight: 700;
-    margin-left: 30px;
-}
-
-.checkout-btn-wrap {
-    display: flex;
-    justify-content: center;
-}
-
-.checkout-btn {
-    padding: 15px 41px;
-    background-color: $second-color;
-    color: #FFFFFF;
-    border: none;
-    margin-top: 17px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-}
+@import "block/cart";
 
 /*преимущества*/
-.advantages {
-    background-color: $main-color;
-}
-
-.advantages-wrap {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-}
-
-.delivery {
-    color: #FBFBFB;
-    text-align: center;
-    text-decoration: none;
-    padding: 103px 0;
-}
-
-.delivery_heading {
-    padding: 28px 0 16px;
-    font-size: 19.96px;
-    line-height: 24px;
-}
-
-.delivery_text {
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-}
-
-.sales {
-    color: #FBFBFB;
-    text-align: center;
-    text-decoration: none;
-    padding: 103px 0;
-}
-
-.sales_heading {
-    font-size: 19.96px;
-    line-height: 24px;
-    padding: 28px 0 16px;
-}
-
-.sales_text {
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-}
-
-.assurance {
-    color: #FBFBFB;
-    text-align: center;
-    text-decoration: none;
-    padding: 103px 0;
-}
-
-.assurance_heading {
-    font-size: 19.96px;
-    line-height: 24px;
-    padding: 28px 0 16px;
-}
-
-.assurance_text {
-    font-weight: 300;
-    font-size: 13.972px;
-    line-height: 17px;
-}
+@import "block/advantages";
 
 /*обратная связь и форма мейл*/
-
-.feedback {
-    min-height: 448px;
-    background-color: #F4F4F4B2;
-    background-image: url(../photo/feedback.jpg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;  
-}
-
-.feedback-wrap {
-    margin-top: 95px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.comment {
-    width: 424px;
-    text-decoration: none;
-}
-
-.comment-photo {
-    height: 96px;
-    margin-bottom: 35px; 
-}
-.comment-text {
-    line-height: 24px;
-    color: $main-color;
-    font-weight: 400;
-}
-
-.comment-text-italic {
-    font-style: italic;
-}
-
-.subscribe {
-    padding-right: 104px;
-}
-
-.subscribe-text {
-    font-size: 24px;
-    line-height: 40px;
-}
-
-.subscribe-heading {
-    font-weight: 700;
-}
-
-.subscribe-heading-mini {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.subscribe-forma {
-    display: flex;
-}
-
-.subscribe-email {
-    background-color: #E1E1E1;
-    font-size: 14px;
-    line-height: 17px;
-    height: 49px;
-    width: 250px;
-    color: $main-color;
-    padding: 15px 24px;
-    border: none;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-
-}
-
-.subscribe-email::placeholder {
-    font-size: 14px;
-    line-height: 17px;
-    opacity: 0.67;
-    color: $main-color;
-}
-
-.subscribe-email:hover {
-    background-color: #c7c5c5;
-}
-
-.subscribe-submit {
-    background-color: $second-color;
-    height: 49px;
-    width: 100px;
-    color: #FFFFFF;
-    text-align: center;
-    border: none;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.subscribe-submit:hover {
-    background-color: #c35766;
-}
+@import "block/subscribe";
 
 /*подвал*/
+@import "block/footer";
 
-.footer {
-    background-color: $main-color;
-    padding: 30px 0;
-    margin-top: auto;
-    min-height: 79px;
+/*адаптив*/
+@media (max-width: 1200px) {
+    .wrap {
+        width: 735px;
+    }
 }
 
-.footer-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-text {
-    color: #FBFBFB;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-
-.instagram {
-    padding: 0 7px ;
-}
-
-.pinterest {
-    padding-right: 7px;
-}
-
-.footer-link {
-    color: transparent;
-    text-decoration: none;
+@media (max-width: 760px) {
+    .wrap {
+        width: 343px;
+    }
 }
