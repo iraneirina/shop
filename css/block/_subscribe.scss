@@ -16,7 +16,7 @@
 }
 
 .comment {
-    width: 424px;
+    min-width: 424px;
     text-decoration: none;
 }
 
@@ -102,5 +102,11 @@
 
     .subscribe {
         padding: 48px 0 140px 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .comment {
+        min-width: 359px;
     }
 }

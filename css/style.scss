@@ -30,7 +30,7 @@ body {
 }
 
 /*шапка*/
-@import "block/_header.scss";
+@import "block/header";
 
 /*promo на главной*/
 @import "block/promo";
@@ -41,22 +41,7 @@ body {
 
 /*page-title в каталоге*/
 
-.page-title {
-    background-color: #F8F3F4;
-}
-
-.page-title-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-.new {
-    font-size: 24px;
-    line-height: 29px;
-    color: $second-color;
-}
+@import "block/catalog-title";
 
 /*фильтр и хлебные крошки*/
 
@@ -345,6 +330,6 @@ body {
 
 @media (max-width: 760px) {
     .wrap {
-        width: 343px;
+        width: 360px;
     }
 }

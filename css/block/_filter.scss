@@ -21,7 +21,7 @@ summary { display: block;}
 /*закрытый фильтр*/
 
 .filter-open {
-    width: 360px;
+    min-width: 360px;
     position: relative;
 }
 
@@ -95,7 +95,7 @@ summary { display: block;}
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
-    width: 297px;
+    min-width: 297px;
     margin-left: 32px;
     padding-top: 16px;
     @include text-contacts()
@@ -120,7 +120,7 @@ summary { display: block;}
 /*выпадающая часть*/
 .middle-filter-checkbox {
     position: absolute;
-    width: 79px;
+    min-width: 79px;
     background-color: #FFFFFF;
     padding: 9px 9px 0 9px;
 }
@@ -128,4 +128,53 @@ summary { display: block;}
 .filter-checkbox-label {
     display: block;
     margin-bottom: 6px;
+}
+
+@media (max-width: 1200px) {
+    .filter-wrap {
+        justify-content: space-between;
+    }
+
+    .filter-text {
+        padding-top: 16px;
+        padding-left: 0;
+    }
+
+    .product-visible {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 760px) { 
+    
+    .filter-open {
+        min-width: 50px;
+    }
+    
+    .filter-text-visible {
+        display: block;
+        display: none;
+    }
+
+    .filter-svg {
+        width: 37px;
+        height: 25px;
+    }
+
+    .filter-text {
+        width: 50px;
+        margin-right: 0;
+    }
+
+    .middle-filter {
+        margin-left: 0;
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 217px;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: -5px;
+    }
 }
