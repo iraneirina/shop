@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Registration</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -83,116 +83,60 @@
         <section class="page-title">
             <div class="wrap page-title-wrap">
                 <div class="page-title-new">
-                    <h2 class="new">NEW ARRIVALS </h2>
-                </div>
-                <div class="page-title-breadcrumb">
-                    <nav class="breadcrumb">
-                        <a class=breadcrumb-item href="index.html">HOME /</a>
-                        <a class=breadcrumb-item href="#">MEN /</a>
-                        <a class=breadcrumb-item-active href="#"> NEW ARRIVALS</a>
-                    </nav>
+                    <h2 class="new">REGISTRATION</h2>
                 </div>
             </div>
+        </section>
+        <section class="registration-info">
+            <div class="reg-block wrap">
+                <div class="reg-form">
+                    <h3 class="form-head">Your Name</h3>
+                    <form action="#" class="registration">
+                        <input type="text" placeholder="First Name" class="reg-field" required><br>
+                        <input type="text" placeholder="Last Name" class="reg-field" required><br>
+                        <div class="gender">
+                            <label><input type="radio" name="gender" class="gender-male" checked> Male</label>
+                            <label><input type="radio" name="gender" class="gender-female"> Female</label>
+                        </div>
+                        <h3 class="form-head">Login details</h3>
+                        <input type="email" placeholder="Email" class="reg-field" required><br>
+                        <input type="password" placeholder="Password" name="psw" class="reg-field reg-field-last"
+                            required>
+                        <h4 class="requirement">Please use 8 or more characters, with at least 1 number and a mixture of
+                            uppercase and
+                            lowercase
+                            letters</h4>
+                        <button type="submit" class="register-btn">JOIN NOW <img class="reg-pointer"
+                                src="photo/pointer-white.svg" alt="pointer">
+                        </button>
+                    </form>
+
+
+                </div>
+                <div class="privilege">
+                    <h3 class="privilege-head">LOYALTY HAS ITS PERKS</h3>
+                    <p class="privilege-text">Get in on the loyalty program where you can earn points and unlock serious
+                        perks. Starting with these as soon as you join:</p>
+                    <ul class="privilege-list">
+                        <li class="privilege-item"><img src="photo/check-list.svg" alt="check"> 15% off welcome offer
+                        </li>
+                        <li class="privilege-item"><img src="photo/check-list.svg" alt="check"> Free shipping, returns
+                            and exchanges on all orders</li>
+                        <li class="privilege-item"><img src="photo/check-list.svg" alt="check"> $10 off a purchase on
+                            your birthday</li>
+                        <li class="privilege-item"><img src="photo/check-list.svg" alt="check"> Early access to products
+                        </li>
+                        <li class="privilege-item"><img src="photo/check-list.svg" alt="check"> Exclusive offers &
+                            rewards</li>
+                    </ul>
+                </div>
+            </div>
+
+
         </section>
 
-        <section class="product-card">
-            <div class="product-card-container">
-                <div class="slader-btn-left"><button class="slider slader-left"><img src="photo/slide-left.svg"
-                            alt="left">
-                    </button></div>
-                <div class="slider-product-card"><img src="photo/product-card.png" alt="product"
-                        class="product-card-photo"></div>
-                <div class="slader-btn-right"><button class="slider slider-right"><img src="photo/slide-right.svg"
-                            alt=""></button>
-                </div>
-            </div>
-        </section>
-        <section class="product-card-info">
-            <div class="wrap product-card-info-wrap">
-                <h3 class="collection-name">WOMEN COLLECTION</h3>
-                <img src="photo/line.png" alt="line">
-                <h2 class="product-card-name">MOSCHINO CHEAP AND CHIC</h2>
-                <p class="product-card-description">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                    Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <p class="product-card-price">$561</p>
-                <img src="photo/line-grey.svg" alt="line">
-                <div class="product-card-options">
-                    <p class="card-color">CHOOSE COLOR</p>
-                    <img src="photo/pointer-down.svg" alt="pointer">
-                    <p class="card-size">CHOOSE SIZE</p>
-                    <img src="photo/pointer-down.svg" alt="pointer">
-                    <p class="card-quantity">QUANTITY</p>
-                    <img src="photo/pointer-down.svg" alt="pointer">
-                </div>
-                <button class="add-to-cart"><img src="photo/cart-pink.svg" alt="cart" class="add-to-cart-img">Add to
-                    Cart</button>
-            </div>
-        </section>
 
-        <section class="fetured">
-            <div class="product-fetured fetured wrap">
-                <div class="products">
-                    <a href="#" class="product">
-                        <img src="photo/t-shirt.png" alt="product" class="product_img">
-                        <div class="all_product_description">
-                            <h2 class="product_name">ELLERY X M'O CAPSULE</h2>
-                            <p class="product_description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product_price">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#" class="product">
-                        <img src="photo/hat.png" alt="product" class="product_img">
-                        <div class="all_product_description">
-                            <h2 class="product_name">ELLERY X M'O CAPSULE</h2>
-                            <p class="product_description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product_price">$52.00</p>
-                        </div>
-                    </a>
-                    <a href="#" class="product">
-                        <img src="photo/green-jacket.png" alt="product" class="product_img">
-                        <div class="all_product_description">
-                            <h2 class="product_name">ELLERY X M'O CAPSULE</h2>
-                            <p class="product_description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <p class="product_price">$52.00</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="advantages">
-            <div class="wrap advantages-wrap">
-                <a href="#" class="advantages-item">
-                    <img src="photo/delivery.svg" alt="delivery" class="delivery_photo">
-                    <h2 class="advantages-heading">Free Delivery</h2>
-                    <p class="advantages-text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion
-                        with
-                        extensive models.</p>
-                </a>
-                <a href="#" class="advantages-item">
-                    <img src="photo/sales.svg" alt="sales" class="sales_photo">
-                    <h2 class="advantages-heading">Sales & discounts</h2>
-                    <p class="advantages-text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion
-                        with
-                        extensive models.</p>
-                </a>
-                <a href="#" class="advantages-item">
-                    <img src="photo/assurance.svg" alt="assurance" class="assurance_photo">
-                    <h2 class="advantages-heading">Quality assurance</h2>
-                    <p class="advantages-text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion
-                        with extensive models.</p>
-                </a>
-            </div>
-        </section>
+
     </main>
     <section class="feedback">
         <div class="wrap feedback-wrap">
