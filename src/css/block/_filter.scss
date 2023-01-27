@@ -28,6 +28,7 @@ summary { display: block;}
 .filter-text {
     padding-top: 16px;
     padding-left: 16px;
+    cursor: pointer;
 }
 
 /*открытый фильтр*/
@@ -111,6 +112,7 @@ summary { display: block;}
 
 .middle-filter-open {
     position: relative;
+    cursor: pointer;
 }
 
 /*открытый фильтр*/
