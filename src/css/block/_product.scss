@@ -1,0 +1,156 @@
+.product-card {
+    background-color: #F7F7F7;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    background: rgba(42, 42, 42, 0.15);
+    width: 31px;
+    height: 31px;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.product-card-photo {
+    display: block;
+    max-width: 95%;
+    max-height: 724px;
+}
+
+.product-card-info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    margin-top: -50px;
+}
+
+.product-cart-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection-name {
+    font-size: 14px;
+    line-height: 17px;
+    color: $second-color;
+    padding-top: 64px;
+    padding-bottom: 12px;
+}
+
+.product-card-name {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    padding-top: 12px;
+}
+
+.product-card-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    max-width: 555px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.product-card-price {
+    font-size: 24px;
+    line-height: 29px;
+    color: $second-color;
+    padding-bottom: 65px;
+}
+
+.product-card-options {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    width: 374px;
+}
+
+.options-img {
+    padding-left: 9px;
+}
+
+.add-to-cart {
+    display: inline-block;
+    border: 1px solid $second-color;
+    background-color:#FFFFFF;
+    color: $second-color;
+    padding: 13px 53px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 65px;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #FFFFFF;
+}
+
+
+/*популярные товары product*/
+
+.product-fetured {
+    padding-top: 75px;
+    padding-bottom: 128px;
+}
+
+@media (max-width: 1200px) {
+    .product-card-photo {
+        max-width: 95%;
+        max-height: 565px;
+    }
+
+    .product-card-info-wrap {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 760px) {
+    .product-card-photo {
+        max-width: 95%;
+        max-height: 454px;
+    }
+
+    .product-card-description {
+        line-height: 20px;
+        max-width: 326px;
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+
+    .product-card-line {
+        width: 174px;
+    }
+
+    .product-card-options {
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
+        width: 304px;
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+}

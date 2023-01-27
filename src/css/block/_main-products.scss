@@ -1,0 +1,122 @@
+.fetured_heading {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 96px;
+}
+
+.featured_text {
+    text-align: center;
+    color: #9F9F9F;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 6px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.product {
+    width: 360px;
+    background: #F8F8F8;
+    text-decoration: none;
+    margin-top: 30px;
+    position: relative;
+}
+
+/*наложение черной прозрачной маски и кнопки на товар*/
+
+.product-overlay {
+    background-color:#00000097;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: 50% bottom;
+}
+
+.product:hover .product-overlay {
+    transform: scaleY(1);
+}
+
+.product-btn {
+    border: 1px solid #FFFFFF;
+    padding: 10px 13px;
+    color: #FFFFFF;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.cart-icon {
+    margin-right: 11px;
+}
+
+.product-btn:hover {
+    color: $second-color;
+    background-color: #fff;
+}
+
+.all_product_description {
+    padding: 25px 28px 18px 16px;
+}
+
+.product_name {
+    font-size: 13px;
+    line-height: 16px;
+    color: $main-color;
+    padding-bottom: 12px;
+}
+
+.product_description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5D5D5D;
+    padding-bottom: 18px;
+}
+
+.product-description-link {
+    text-decoration: none;
+}
+
+.product_price {
+    font-size: 16px;
+    line-height: 19px;
+    color: $second-color;
+}
+
+/*кнопка посередине на главной*/
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button_all_products {
+    font-size: 16px;
+    line-height: 19px;
+    color: $second-color;
+    text-align: center;
+    border: 1px solid $second-color;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 49px;
+    margin-bottom: 95px;
+    transition: 0.4s;
+}
+
+.button_all_products:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #FFFFFF;
+}
