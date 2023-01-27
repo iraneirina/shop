@@ -1,10 +1,10 @@
 .feedback {
     min-height: 448px;
     background-color: #F4F4F4B2;
-    background-image: url(../photo/feedback.jpg);
+    background-image: url(/src/photo/feedback.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: cover;  
+    background-size: cover;
 }
 
 .feedback-wrap {
@@ -22,7 +22,7 @@
 
 .comment-photo {
     height: 96px;
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
 }
 .comment-text {
     line-height: 24px;

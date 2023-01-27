@@ -51,6 +51,7 @@ summary { display: block;}
     background-color: #FFFFFF;
     padding: 24px 15px 16px 17px;
     color:#6F6E6E;
+    z-index: 3;
 }
 
 .filter-text {
@@ -123,6 +124,7 @@ summary { display: block;}
     min-width: 79px;
     background-color: #FFFFFF;
     padding: 9px 9px 0 9px;
+    z-index: 2;
 }
 
 .filter-checkbox-label {
@@ -143,11 +145,9 @@ summary { display: block;}
     .product-visible {
         display: none;
     }
-    
 }
 
 @media (max-width: 760px) { 
-    
     .filter-open {
         min-width: 50px;
     }

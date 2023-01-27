@@ -11,7 +11,7 @@
 
 .header-left .header-right{
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .header-logo-link {
@@ -23,7 +23,8 @@
 .button-search, .button-burger {
     background-color: transparent; /*чтобы картинка svg была видна*/
     border: none;
-} 
+
+}
 
 .account-link {
     margin: 0 33px;
@@ -38,6 +39,10 @@
 
 /*меню навигации*/
 
+.button-burger {
+    cursor: pointer;
+}
+
 .main-menu {
     background-color: #FFFFFF;
     width: 235px;
@@ -47,6 +52,7 @@
     right: 0;
     top:100%;
     min-height: 764px;
+    z-index: 4;
 }
 
 .main-menu-open {

@@ -19,19 +19,19 @@
 }
 
 .category-item-women {
-    background-image: url(../photo/women.jpg);
+    background-image: url(/src/photo/women.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .category-item-men {
-    background-image: url(../photo/men.jpg);
+    background-image: url(/src/photo/men.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .category-item-kids {
-    background-image: url(../photo/kids.jpg);
+    background-image: url(/src/photo/kids.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -40,7 +40,7 @@
     width: 100%;
     margin-top: 30px;
     min-height: 180px;
-    background-image: url(../photo/accesories.jpg);
+    background-image: url(/src/photo/accesories.jpg);
 }
 
 .category_text {
@@ -58,6 +58,10 @@
 .category_text_accesories {
     top: 71px;
     left: 495px;
+}
+
+.category-link {
+    text-decoration: none;
 }
 
 
@@ -86,5 +90,6 @@
 
     .category-item-acc {
         margin-top: 0;
+        min-height: 111px;
     }
 }

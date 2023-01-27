@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-image: url(../photo/promo.png);
+    background-image: url(/src/photo/promo.png);
     background-size:70% auto;
     background-repeat: no-repeat;
     background-position-x: -224px;
@@ -59,7 +59,7 @@
     .of-luxerious {
         font-size: 24px;
     }
-    
+
     .fashion {
         font-size: 24px;
     }
@@ -69,9 +69,9 @@
     .promo {
         background-size: 100%;
     }
-    
+
     .promo-wrap {
-        min-height: 363px; 
+        min-height: 363px;
         display: block;
         background-image: none;
         display: flex;
@@ -79,7 +79,7 @@
         justify-content: center;
     }
 
-    .promo-title { 
+    .promo-title {
         display: block;
     }
 
@@ -90,7 +90,7 @@
     .of-luxerious {
         font-size: 20px;
     }
-    
+
     .fashion {
         font-size: 20px;
     }
@@ -99,5 +99,4 @@
         line-height: 15px;
     }
 }
-    
-    
+
