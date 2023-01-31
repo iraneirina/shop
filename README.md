@@ -1,4 +1,7 @@
 # Магазин
+
+[Ссылка на развернутый проект](https://shop-six-rose.vercel.app/)
+
 В данном проекте реализована адаптивная верстка по макету. Использовался [данный макет в Figma](https://www.figma.com/file/7XhT5EWfZX0W6ohgd57Pny/shop?node-id=0%3A1&t=cKnUA7lHynu0fRYp-0).
 
 Выполнена верстка пяти страниц:
